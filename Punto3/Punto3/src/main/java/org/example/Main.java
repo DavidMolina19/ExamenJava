@@ -26,23 +26,27 @@ public class Main {
 
         System.out.println("digite el numero de ejemplares ");
         libro.setNumeroEjemplares(entradaPorTeclado.nextInt());
-        System.out.println(libro.getNumeroEjemplares());
+
 
         System.out.println("Digite el nombre del libro ");
-        libro.setNombre(entradaPorTeclado.nextLine());
-        System.out.println(libro.getNombre());
+        libro.setNombre(entradaPorTeclado.next());
+
 
         System.out.println("digita el codigo del libro ");
-        libro.setCodigo(entradaPorTeclado.nextLine());
+        libro.setCodigo(entradaPorTeclado.next());
 
-        System.out.println("el auto del libro es: ");
+
+
         libro.setAutor("carlos");
-        System.out.println(libro.getAutor());
 
 
 
 
 
+        System.out.println("el nombre del libro es : "+libro.getNombre());
+        System.out.println("el codgio de tu libro es : "+libro.getCodigo());
+        System.out.println("el autor del libro es :"+libro.getAutor());
+        System.out.println("numero de ejemplares: "+libro.getNumeroEjemplares());
 
 
     }
